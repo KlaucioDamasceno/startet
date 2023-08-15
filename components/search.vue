@@ -1,13 +1,15 @@
 <script setup>
 const dog = ref("");
 const dogError = ref(false)
+console.log(dog.value)
 const handleSearch = () => {
   if(!dog.value){
     return dogError.value = true
   }
   navigateTo('/dogs/{dog.value}')
- 
 }
+
+
 
 </script>
 
@@ -18,8 +20,7 @@ const handleSearch = () => {
       v-model="dog"
       :class="dogError ? 'border-red-500 border': ''"
       />
-    <button type="submit" class="bg-sky-500 px-10 text-white" @click="handleSearch">buscar</button>
-
+    <button id= "submit" type="submit" class="bg-sky-500 px-10 text-white" @click="handleSearch">buscar</button>
   </div>
 </template>
 

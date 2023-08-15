@@ -33,10 +33,10 @@ const updateModal = (key) => {
             <button class="bg-blue-400 w-full mt-2 rounded text-white p-1">Buscar</button>
           </div>
           </div>
-
           <Informe title="Raça" name="Labrador" />
           <Informe title="Raça" name="Pug" />
           <!-- <Informe title="Raça" name="Pastor" /> -->
+    
         </div>
         <div class="w-full">
           <Card v-for="car in cars" :key="car.id" :car="car"/>

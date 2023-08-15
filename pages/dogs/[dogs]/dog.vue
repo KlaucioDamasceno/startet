@@ -12,7 +12,7 @@ useHead({
 
 <template>
   <div>
-    <p>p{{ route.params.name }}</p>
+    <p>{{ route.params.name }}</p>
     <NuxtPage />
   </div>
 </template>
