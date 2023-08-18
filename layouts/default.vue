@@ -1,4 +1,5 @@
 <template>
+  <LayoutTheDrawer />
   <div>
     <Header/>
     <slot />

@@ -8,7 +8,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="shadow border w-full overflow-hidden mb-5 cursor-pointer h-[200px]" @click="navigateTo(`/dogs/${car.name}-${car.id}`)">
+  <div class="shadow border w-full overflow-hidden mb-5 cursor-pointer h-[200px]" @click="navigateTo(`/car/${car.name}-${car.id}`)">
     <div class="flex h-full">
       <img
         :src= "car.url"
